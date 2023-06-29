@@ -1,0 +1,3876 @@
+# 1 "gpio.cpp"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "gpio.cpp"
+# 1 "gpio.h" 1
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 1 3
+# 29 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\_ansi.h" 1 3
+# 10 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\_ansi.h" 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\newlib.h" 1 3
+# 14 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\newlib.h" 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\_newlib_version.h" 1 3
+# 15 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\newlib.h" 2 3
+# 11 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\_ansi.h" 2 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\config.h" 1 3
+
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\ieeefp.h" 1 3
+# 5 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\config.h" 2 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\features.h" 1 3
+# 25 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\features.h" 3
+
+# 25 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\features.h" 3
+extern "C" {
+# 535 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\features.h" 3
+}
+# 6 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\config.h" 2 3
+# 12 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\_ansi.h" 2 3
+# 30 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 2 3
+
+
+
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\cdefs.h" 1 3
+# 45 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\cdefs.h" 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 1 3
+# 37 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+extern "C" {
+
+
+
+typedef signed char __int8_t;
+
+typedef unsigned char __uint8_t;
+# 55 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef short int __int16_t;
+
+typedef short unsigned int __uint16_t;
+# 77 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef long int __int32_t;
+
+typedef long unsigned int __uint32_t;
+# 103 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef long long int __int64_t;
+
+typedef long long unsigned int __uint64_t;
+# 134 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef signed char __int_least8_t;
+
+typedef unsigned char __uint_least8_t;
+# 160 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef short int __int_least16_t;
+
+typedef short unsigned int __uint_least16_t;
+# 182 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef long int __int_least32_t;
+
+typedef long unsigned int __uint_least32_t;
+# 200 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef long long int __int_least64_t;
+
+typedef long long unsigned int __uint_least64_t;
+# 214 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+typedef long long int __intmax_t;
+
+
+
+
+
+
+
+typedef long long unsigned int __uintmax_t;
+
+
+
+
+
+
+
+typedef int __intptr_t;
+
+typedef unsigned int __uintptr_t;
+# 247 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_default_types.h" 3
+}
+# 46 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\cdefs.h" 2 3
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 1 3 4
+# 209 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 48 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\cdefs.h" 2 3
+# 36 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 2 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 1 3 4
+# 143 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 3 4
+typedef int ptrdiff_t;
+# 415 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 3 4
+typedef struct {
+  long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
+  long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
+# 426 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 3 4
+} max_align_t;
+
+
+
+
+
+
+  typedef decltype(nullptr) nullptr_t;
+# 37 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 2 3
+
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stdarg.h" 1 3 4
+# 40 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 41 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 2 3
+# 60 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 1 3
+# 9 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+extern "C" {
+
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\_ansi.h" 1 3
+# 14 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 2 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 1 3 4
+# 15 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 2 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 1 3
+# 24 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 1 3 4
+# 350 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stddef.h" 3 4
+typedef unsigned int wint_t;
+# 25 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 2 3
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\_types.h" 1 3
+# 28 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 2 3
+
+
+typedef long __blkcnt_t;
+
+
+
+typedef long __blksize_t;
+
+
+
+typedef __uint64_t __fsblkcnt_t;
+
+
+
+typedef __uint32_t __fsfilcnt_t;
+
+
+
+typedef long _off_t;
+
+
+
+
+
+typedef int __pid_t;
+
+
+
+typedef short __dev_t;
+
+
+
+typedef unsigned short __uid_t;
+
+
+typedef unsigned short __gid_t;
+
+
+
+typedef __uint32_t __id_t;
+
+
+
+
+
+
+
+typedef unsigned short __ino_t;
+# 90 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 3
+typedef __uint32_t __mode_t;
+
+
+
+
+
+__extension__ typedef long long _off64_t;
+
+
+
+
+
+typedef _off_t __off_t;
+
+
+typedef _off64_t __loff_t;
+
+
+typedef long __key_t;
+
+
+
+
+
+
+
+typedef long _fpos_t;
+# 131 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 3
+typedef unsigned int __size_t;
+# 147 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 3
+typedef signed int _ssize_t;
+# 158 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_types.h" 3
+typedef _ssize_t __ssize_t;
+
+
+
+typedef struct
+{
+  int __count;
+  union
+  {
+    wint_t __wch;
+    unsigned char __wchb[4];
+  } __value;
+} _mbstate_t;
+
+
+
+
+typedef void *_iconv_t;
+
+
+
+
+
+
+typedef unsigned long __clock_t;
+
+
+
+
+
+
+typedef __int_least64_t __time_t;
+
+
+
+
+
+typedef unsigned long __clockid_t;
+
+
+typedef unsigned long __timer_t;
+
+
+typedef __uint8_t __sa_family_t;
+
+
+
+typedef __uint32_t __socklen_t;
+
+
+typedef int __nl_item;
+typedef unsigned short __nlink_t;
+typedef long __suseconds_t;
+typedef unsigned long __useconds_t;
+
+
+
+
+
+
+
+typedef __builtin_va_list __va_list;
+# 16 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 2 3
+
+
+
+
+
+
+typedef unsigned long __ULong;
+# 34 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\lock.h" 1 3
+# 30 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\lock.h" 3
+extern "C" {
+
+
+struct __lock;
+typedef struct __lock * _LOCK_T;
+
+
+
+
+
+
+extern void __retarget_lock_init(_LOCK_T *lock);
+
+extern void __retarget_lock_init_recursive(_LOCK_T *lock);
+
+extern void __retarget_lock_close(_LOCK_T lock);
+
+extern void __retarget_lock_close_recursive(_LOCK_T lock);
+
+extern void __retarget_lock_acquire(_LOCK_T lock);
+
+extern void __retarget_lock_acquire_recursive(_LOCK_T lock);
+
+extern int __retarget_lock_try_acquire(_LOCK_T lock);
+
+extern int __retarget_lock_try_acquire_recursive(_LOCK_T lock);
+
+
+extern void __retarget_lock_release(_LOCK_T lock);
+
+extern void __retarget_lock_release_recursive(_LOCK_T lock);
+
+
+
+}
+# 35 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 2 3
+typedef _LOCK_T _flock_t;
+
+
+
+
+
+
+
+struct _reent;
+
+struct __locale_t;
+
+
+
+
+
+
+struct _Bigint
+{
+  struct _Bigint *_next;
+  int _k, _maxwds, _sign, _wds;
+  __ULong _x[1];
+};
+
+
+struct __tm
+{
+  int __tm_sec;
+  int __tm_min;
+  int __tm_hour;
+  int __tm_mday;
+  int __tm_mon;
+  int __tm_year;
+  int __tm_wday;
+  int __tm_yday;
+  int __tm_isdst;
+};
+
+
+
+
+
+
+
+struct _on_exit_args {
+ void * _fnargs[32];
+ void * _dso_handle[32];
+
+ __ULong _fntypes;
+
+
+ __ULong _is_cxa;
+};
+# 98 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+struct _atexit {
+ struct _atexit *_next;
+ int _ind;
+
+ void (*_fns[32])(void);
+        struct _on_exit_args _on_exit_args;
+};
+# 122 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+struct __sbuf {
+ unsigned char *_base;
+ int _size;
+};
+# 186 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+struct __sFILE {
+  unsigned char *_p;
+  int _r;
+  int _w;
+  short _flags;
+  short _file;
+  struct __sbuf _bf;
+  int _lbfsize;
+
+
+
+
+
+
+  void * _cookie;
+
+  int (*_read) (struct _reent *, void *,
+        char *, int);
+  int (*_write) (struct _reent *, void *,
+         const char *,
+         int);
+  _fpos_t (*_seek) (struct _reent *, void *, _fpos_t, int);
+  int (*_close) (struct _reent *, void *);
+
+
+  struct __sbuf _ub;
+  unsigned char *_up;
+  int _ur;
+
+
+  unsigned char _ubuf[3];
+  unsigned char _nbuf[1];
+
+
+  struct __sbuf _lb;
+
+
+  int _blksize;
+  _off_t _offset;
+
+
+  struct _reent *_data;
+
+
+
+  _flock_t _lock;
+
+  _mbstate_t _mbstate;
+  int _flags2;
+};
+# 292 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+typedef struct __sFILE __FILE;
+
+
+
+struct _glue
+{
+  struct _glue *_next;
+  int _niobs;
+  __FILE *_iobs;
+};
+# 324 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+struct _rand48 {
+  unsigned short _seed[3];
+  unsigned short _mult[3];
+  unsigned short _add;
+
+
+
+
+};
+# 613 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+struct _reent
+{
+  int _errno;
+
+
+
+
+  __FILE *_stdin, *_stdout, *_stderr;
+
+  int _inc;
+  char _emergency[25];
+
+
+  int _unspecified_locale_info;
+  struct __locale_t *_locale;
+
+  int __sdidinit;
+
+  void (*__cleanup) (struct _reent *);
+
+
+  struct _Bigint *_result;
+  int _result_k;
+  struct _Bigint *_p5s;
+  struct _Bigint **_freelist;
+
+
+  int _cvtlen;
+  char *_cvtbuf;
+
+  union
+    {
+      struct
+        {
+          unsigned int _unused_rand;
+          char * _strtok_last;
+          char _asctime_buf[26];
+          struct __tm _localtime_buf;
+          int _gamma_signgam;
+          __extension__ unsigned long long _rand_next;
+          struct _rand48 _r48;
+          _mbstate_t _mblen_state;
+          _mbstate_t _mbtowc_state;
+          _mbstate_t _wctomb_state;
+          char _l64a_buf[8];
+          char _signal_buf[24];
+          int _getdate_err;
+          _mbstate_t _mbrlen_state;
+          _mbstate_t _mbrtowc_state;
+          _mbstate_t _mbsrtowcs_state;
+          _mbstate_t _wcrtomb_state;
+          _mbstate_t _wcsrtombs_state;
+   int _h_errno;
+        } _reent;
+
+
+
+      struct
+        {
+
+          unsigned char * _nextf[30];
+          unsigned int _nmalloc[30];
+        } _unused;
+    } _new;
+
+
+
+  struct _atexit *_atexit;
+  struct _atexit _atexit0;
+
+
+
+  void (**(_sig_func))(int);
+
+
+
+
+  struct _glue __sglue;
+
+  __FILE __sf[3];
+
+};
+# 819 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+extern struct _reent *_impure_ptr ;
+extern struct _reent *const _global_impure_ptr ;
+
+void _reclaim_reent (struct _reent *);
+# 845 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\reent.h" 3
+}
+# 61 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 2 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\types.h" 1 3
+# 28 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\types.h" 3
+typedef __uint8_t u_int8_t;
+
+
+typedef __uint16_t u_int16_t;
+
+
+typedef __uint32_t u_int32_t;
+
+
+typedef __uint64_t u_int64_t;
+
+typedef __intptr_t register_t;
+
+
+
+
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h" 1 3
+# 15 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_stdint.h" 3
+extern "C" {
+
+
+
+
+typedef __int8_t int8_t ;
+
+
+
+typedef __uint8_t uint8_t ;
+
+
+
+
+
+
+
+typedef __int16_t int16_t ;
+
+
+
+typedef __uint16_t uint16_t ;
+
+
+
+
+
+
+
+typedef __int32_t int32_t ;
+
+
+
+typedef __uint32_t uint32_t ;
+
+
+
+
+
+
+
+typedef __int64_t int64_t ;
+
+
+
+typedef __uint64_t uint64_t ;
+
+
+
+
+
+
+typedef __intmax_t intmax_t;
+
+
+
+
+typedef __uintmax_t uintmax_t;
+
+
+
+
+typedef __intptr_t intptr_t;
+
+
+
+
+typedef __uintptr_t uintptr_t;
+
+
+
+
+}
+# 47 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\types.h" 2 3
+# 97 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\types.h" 3
+typedef __blkcnt_t blkcnt_t;
+
+
+
+
+typedef __blksize_t blksize_t;
+
+
+
+
+typedef unsigned long clock_t;
+
+
+
+
+
+typedef __int_least64_t time_t;
+
+
+
+
+
+typedef long daddr_t;
+
+
+
+typedef char * caddr_t;
+
+
+
+
+typedef __fsblkcnt_t fsblkcnt_t;
+typedef __fsfilcnt_t fsfilcnt_t;
+
+
+
+
+typedef __id_t id_t;
+
+
+
+
+typedef __ino_t ino_t;
+# 157 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\types.h" 3
+typedef __off_t off_t;
+
+
+
+typedef __dev_t dev_t;
+
+
+
+typedef __uid_t uid_t;
+
+
+
+typedef __gid_t gid_t;
+
+
+
+
+typedef __pid_t pid_t;
+
+
+
+
+typedef __key_t key_t;
+
+
+
+
+typedef _ssize_t ssize_t;
+
+
+
+
+typedef __mode_t mode_t;
+
+
+
+
+typedef __nlink_t nlink_t;
+
+
+
+
+typedef __clockid_t clockid_t;
+
+
+
+
+
+typedef __timer_t timer_t;
+
+
+
+
+
+typedef __useconds_t useconds_t;
+
+
+
+
+typedef __suseconds_t suseconds_t;
+
+
+
+typedef __int64_t sbintime_t;
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_pthreadtypes.h" 1 3
+# 224 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\types.h" 2 3
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\machine\\types.h" 1 3
+# 225 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\types.h" 2 3
+# 62 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 2 3
+
+extern "C" {
+
+
+typedef __FILE FILE;
+
+
+
+
+
+
+typedef _fpos_t fpos_t;
+
+
+
+
+
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\stdio.h" 1 3
+# 80 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 2 3
+# 186 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+FILE * tmpfile (void);
+char * tmpnam (char *);
+
+
+
+int fclose (FILE *);
+int fflush (FILE *);
+FILE * freopen (const char *, const char *, FILE *);
+void setbuf (FILE *, char *);
+int setvbuf (FILE *, char *, int, size_t);
+int fprintf (FILE *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 2, 3)));
+int fscanf (FILE *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 2, 3)));
+int printf (const char *, ...)
+               __attribute__ ((__format__ (__printf__, 1, 2)));
+int scanf (const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 1, 2)));
+int sscanf (const char *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 2, 3)));
+int vfprintf (FILE *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 2, 0)));
+int vprintf (const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 1, 0)));
+int vsprintf (char *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 2, 0)));
+int fgetc (FILE *);
+char * fgets (char *, int, FILE *);
+int fputc (int, FILE *);
+int fputs (const char *, FILE *);
+int getc (FILE *);
+int getchar (void);
+char * gets (char *);
+int putc (int, FILE *);
+int putchar (int);
+int puts (const char *);
+int ungetc (int, FILE *);
+size_t fread (void *, size_t _size, size_t _n, FILE *);
+size_t fwrite (const void * , size_t _size, size_t _n, FILE *);
+
+
+
+int fgetpos (FILE *, fpos_t *);
+
+int fseek (FILE *, long, int);
+
+
+
+int fsetpos (FILE *, const fpos_t *);
+
+long ftell ( FILE *);
+void rewind (FILE *);
+void clearerr (FILE *);
+int feof (FILE *);
+int ferror (FILE *);
+void perror (const char *);
+
+FILE * fopen (const char * _name, const char * _type);
+int sprintf (char *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 2, 3)));
+int remove (const char *);
+int rename (const char *, const char *);
+# 266 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+int snprintf (char *, size_t, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int vsnprintf (char *, size_t, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int vfscanf (FILE *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 2, 0)));
+int vscanf (const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 1, 0)));
+int vsscanf (const char *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 396 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+int _asiprintf_r (struct _reent *, char **, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 4, 5)));
+char * _asnprintf_r (struct _reent *, char *, size_t *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 4, 5)));
+int _asprintf_r (struct _reent *, char **, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int _diprintf_r (struct _reent *, int, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int _dprintf_r (struct _reent *, int, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int _fclose_r (struct _reent *, FILE *);
+int _fcloseall_r (struct _reent *);
+FILE * _fdopen_r (struct _reent *, int, const char *);
+int _fflush_r (struct _reent *, FILE *);
+int _fgetc_r (struct _reent *, FILE *);
+int _fgetc_unlocked_r (struct _reent *, FILE *);
+char * _fgets_r (struct _reent *, char *, int, FILE *);
+char * _fgets_unlocked_r (struct _reent *, char *, int, FILE *);
+
+
+
+
+int _fgetpos_r (struct _reent *, FILE *, fpos_t *);
+int _fsetpos_r (struct _reent *, FILE *, const fpos_t *);
+
+int _fiprintf_r (struct _reent *, FILE *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int _fiscanf_r (struct _reent *, FILE *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 3, 4)));
+FILE * _fmemopen_r (struct _reent *, void *, size_t, const char *);
+FILE * _fopen_r (struct _reent *, const char *, const char *);
+FILE * _freopen_r (struct _reent *, const char *, const char *, FILE *);
+int _fprintf_r (struct _reent *, FILE *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int _fpurge_r (struct _reent *, FILE *);
+int _fputc_r (struct _reent *, int, FILE *);
+int _fputc_unlocked_r (struct _reent *, int, FILE *);
+int _fputs_r (struct _reent *, const char *, FILE *);
+int _fputs_unlocked_r (struct _reent *, const char *, FILE *);
+size_t _fread_r (struct _reent *, void *, size_t _size, size_t _n, FILE *);
+size_t _fread_unlocked_r (struct _reent *, void *, size_t _size, size_t _n, FILE *);
+int _fscanf_r (struct _reent *, FILE *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 3, 4)));
+int _fseek_r (struct _reent *, FILE *, long, int);
+int _fseeko_r (struct _reent *, FILE *, _off_t, int);
+long _ftell_r (struct _reent *, FILE *);
+_off_t _ftello_r (struct _reent *, FILE *);
+void _rewind_r (struct _reent *, FILE *);
+size_t _fwrite_r (struct _reent *, const void *, size_t _size, size_t _n, FILE *);
+size_t _fwrite_unlocked_r (struct _reent *, const void *, size_t _size, size_t _n, FILE *);
+int _getc_r (struct _reent *, FILE *);
+int _getc_unlocked_r (struct _reent *, FILE *);
+int _getchar_r (struct _reent *);
+int _getchar_unlocked_r (struct _reent *);
+char * _gets_r (struct _reent *, char *);
+int _iprintf_r (struct _reent *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 2, 3)));
+int _iscanf_r (struct _reent *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 2, 3)));
+FILE * _open_memstream_r (struct _reent *, char **, size_t *);
+void _perror_r (struct _reent *, const char *);
+int _printf_r (struct _reent *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 2, 3)));
+int _putc_r (struct _reent *, int, FILE *);
+int _putc_unlocked_r (struct _reent *, int, FILE *);
+int _putchar_unlocked_r (struct _reent *, int);
+int _putchar_r (struct _reent *, int);
+int _puts_r (struct _reent *, const char *);
+int _remove_r (struct _reent *, const char *);
+int _rename_r (struct _reent *,
+      const char *_old, const char *_new);
+int _scanf_r (struct _reent *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 2, 3)));
+int _siprintf_r (struct _reent *, char *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int _siscanf_r (struct _reent *, const char *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 3, 4)));
+int _sniprintf_r (struct _reent *, char *, size_t, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 4, 5)));
+int _snprintf_r (struct _reent *, char *, size_t, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 4, 5)));
+int _sprintf_r (struct _reent *, char *, const char *, ...)
+               __attribute__ ((__format__ (__printf__, 3, 4)));
+int _sscanf_r (struct _reent *, const char *, const char *, ...)
+               __attribute__ ((__format__ (__scanf__, 3, 4)));
+char * _tempnam_r (struct _reent *, const char *, const char *);
+FILE * _tmpfile_r (struct _reent *);
+char * _tmpnam_r (struct _reent *, char *);
+int _ungetc_r (struct _reent *, int, FILE *);
+int _vasiprintf_r (struct _reent *, char **, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+char * _vasniprintf_r (struct _reent*, char *, size_t *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 4, 0)));
+char * _vasnprintf_r (struct _reent*, char *, size_t *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 4, 0)));
+int _vasprintf_r (struct _reent *, char **, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int _vdiprintf_r (struct _reent *, int, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int _vdprintf_r (struct _reent *, int, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int _vfiprintf_r (struct _reent *, FILE *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int _vfiscanf_r (struct _reent *, FILE *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 3, 0)));
+int _vfprintf_r (struct _reent *, FILE *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int _vfscanf_r (struct _reent *, FILE *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 3, 0)));
+int _viprintf_r (struct _reent *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 2, 0)));
+int _viscanf_r (struct _reent *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 2, 0)));
+int _vprintf_r (struct _reent *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 2, 0)));
+int _vscanf_r (struct _reent *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 2, 0)));
+int _vsiprintf_r (struct _reent *, char *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int _vsiscanf_r (struct _reent *, const char *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 3, 0)));
+int _vsniprintf_r (struct _reent *, char *, size_t, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 4, 0)));
+int _vsnprintf_r (struct _reent *, char *, size_t, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 4, 0)));
+int _vsprintf_r (struct _reent *, char *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__printf__, 3, 0)));
+int _vsscanf_r (struct _reent *, const char *, const char *, __gnuc_va_list)
+               __attribute__ ((__format__ (__scanf__, 3, 0)));
+
+
+
+int fpurge (FILE *);
+ssize_t __getdelim (char **, size_t *, int, FILE *);
+ssize_t __getline (char **, size_t *, FILE *);
+# 577 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+int __srget_r (struct _reent *, FILE *);
+int __swbuf_r (struct _reent *, int, FILE *);
+# 687 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
+
+
+
+
+ if (--_p->_w >= 0 || (_p->_w >= _p->_lbfsize && (char)_c != '\n'))
+  return (*_p->_p++ = _c);
+ else
+  return (__swbuf_r(_ptr, _c, _p));
+}
+# 797 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdio.h" 3
+}
+# 4 "gpio.h" 2
+# 1 "stm32f446re.h" 1
+# 38 "stm32f446re.h"
+ 
+# 38 "stm32f446re.h"
+extern "C" {
+# 66 "stm32f446re.h"
+typedef enum
+{
+
+  NonMaskableInt_IRQn = -14,
+  MemoryManagement_IRQn = -12,
+  BusFault_IRQn = -11,
+  UsageFault_IRQn = -10,
+  SVCall_IRQn = -5,
+  DebugMonitor_IRQn = -4,
+  PendSV_IRQn = -2,
+  SysTick_IRQn = -1,
+
+  WWDG_IRQn = 0,
+  PVD_IRQn = 1,
+  TAMP_STAMP_IRQn = 2,
+  RTC_WKUP_IRQn = 3,
+  FLASH_IRQn = 4,
+  RCC_IRQn = 5,
+  EXTI0_IRQn = 6,
+  EXTI1_IRQn = 7,
+  EXTI2_IRQn = 8,
+  EXTI3_IRQn = 9,
+  EXTI4_IRQn = 10,
+  DMA1_Stream0_IRQn = 11,
+  DMA1_Stream1_IRQn = 12,
+  DMA1_Stream2_IRQn = 13,
+  DMA1_Stream3_IRQn = 14,
+  DMA1_Stream4_IRQn = 15,
+  DMA1_Stream5_IRQn = 16,
+  DMA1_Stream6_IRQn = 17,
+  ADC_IRQn = 18,
+  CAN1_TX_IRQn = 19,
+  CAN1_RX0_IRQn = 20,
+  CAN1_RX1_IRQn = 21,
+  CAN1_SCE_IRQn = 22,
+  EXTI9_5_IRQn = 23,
+  TIM1_BRK_TIM9_IRQn = 24,
+  TIM1_UP_TIM10_IRQn = 25,
+  TIM1_TRG_COM_TIM11_IRQn = 26,
+  TIM1_CC_IRQn = 27,
+  TIM2_IRQn = 28,
+  TIM3_IRQn = 29,
+  TIM4_IRQn = 30,
+  I2C1_EV_IRQn = 31,
+  I2C1_ER_IRQn = 32,
+  I2C2_EV_IRQn = 33,
+  I2C2_ER_IRQn = 34,
+  SPI1_IRQn = 35,
+  SPI2_IRQn = 36,
+  USART1_IRQn = 37,
+  USART2_IRQn = 38,
+  USART3_IRQn = 39,
+  EXTI15_10_IRQn = 40,
+  RTC_Alarm_IRQn = 41,
+  OTG_FS_WKUP_IRQn = 42,
+  TIM8_BRK_TIM12_IRQn = 43,
+  TIM8_UP_TIM13_IRQn = 44,
+  TIM8_TRG_COM_TIM14_IRQn = 45,
+  TIM8_CC_IRQn = 46,
+  DMA1_Stream7_IRQn = 47,
+  FMC_IRQn = 48,
+  SDIO_IRQn = 49,
+  TIM5_IRQn = 50,
+  SPI3_IRQn = 51,
+  UART4_IRQn = 52,
+  UART5_IRQn = 53,
+  TIM6_DAC_IRQn = 54,
+  TIM7_IRQn = 55,
+  DMA2_Stream0_IRQn = 56,
+  DMA2_Stream1_IRQn = 57,
+  DMA2_Stream2_IRQn = 58,
+  DMA2_Stream3_IRQn = 59,
+  DMA2_Stream4_IRQn = 60,
+  CAN2_TX_IRQn = 63,
+  CAN2_RX0_IRQn = 64,
+  CAN2_RX1_IRQn = 65,
+  CAN2_SCE_IRQn = 66,
+  OTG_FS_IRQn = 67,
+  DMA2_Stream5_IRQn = 68,
+  DMA2_Stream6_IRQn = 69,
+  DMA2_Stream7_IRQn = 70,
+  USART6_IRQn = 71,
+  I2C3_EV_IRQn = 72,
+  I2C3_ER_IRQn = 73,
+  OTG_HS_EP1_OUT_IRQn = 74,
+  OTG_HS_EP1_IN_IRQn = 75,
+  OTG_HS_WKUP_IRQn = 76,
+  OTG_HS_IRQn = 77,
+  DCMI_IRQn = 78,
+  FPU_IRQn = 81,
+  SPI4_IRQn = 84,
+  SAI1_IRQn = 87,
+  SAI2_IRQn = 91,
+  QUADSPI_IRQn = 92,
+  CEC_IRQn = 93,
+  SPDIF_RX_IRQn = 94,
+  FMPI2C1_EV_IRQn = 95,
+  FMPI2C1_ER_IRQn = 96
+} IRQn_Type;
+
+
+
+
+
+# 1 "core_cm4.h" 1
+# 34 "core_cm4.h"
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stdint.h" 1 3 4
+# 9 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stdint.h" 3 4
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 1 3 4
+# 13 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 3 4
+# 1 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_intsup.h" 1 3 4
+# 35 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_intsup.h" 3 4
+       
+       
+       
+       
+       
+       
+       
+       
+# 190 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\sys\\_intsup.h" 3 4
+       
+       
+       
+       
+       
+       
+       
+       
+# 14 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 2 3 4
+
+
+
+
+# 17 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 3 4
+extern "C" {
+
+
+
+typedef __int_least8_t int_least8_t;
+typedef __uint_least8_t uint_least8_t;
+
+
+
+
+typedef __int_least16_t int_least16_t;
+typedef __uint_least16_t uint_least16_t;
+
+
+
+
+typedef __int_least32_t int_least32_t;
+typedef __uint_least32_t uint_least32_t;
+
+
+
+
+typedef __int_least64_t int_least64_t;
+typedef __uint_least64_t uint_least64_t;
+# 51 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 3 4
+  typedef int int_fast8_t;
+  typedef unsigned int uint_fast8_t;
+# 61 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 3 4
+  typedef int int_fast16_t;
+  typedef unsigned int uint_fast16_t;
+# 71 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 3 4
+  typedef int int_fast32_t;
+  typedef unsigned int uint_fast32_t;
+# 81 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 3 4
+  typedef long long int int_fast64_t;
+  typedef long long unsigned int uint_fast64_t;
+# 463 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\stdint.h" 3 4
+}
+# 10 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\lib\\gcc\\arm-none-eabi\\10.3.1\\include\\stdint.h" 2 3 4
+# 35 "core_cm4.h" 2
+
+
+ 
+# 37 "core_cm4.h"
+extern "C" {
+# 162 "core_cm4.h"
+# 1 "cmsis_compiler.h" 1
+# 29 "cmsis_compiler.h"
+# 1 "cmsis_gcc.h" 1
+# 29 "cmsis_gcc.h"
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+#pragma GCC diagnostic ignored "-Wconversion"
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+# 71 "cmsis_gcc.h"
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed)) T_UINT32 { uint32_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT16_WRITE { uint16_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT16_READ { uint16_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT32_WRITE { uint32_t v; };
+#pragma GCC diagnostic pop
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpacked"
+#pragma GCC diagnostic ignored "-Wattributes"
+  struct __attribute__((packed, aligned(1))) T_UINT32_READ { uint32_t v; };
+#pragma GCC diagnostic pop
+# 131 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline __attribute__((__noreturn__)) void __cmsis_start(void)
+{
+  extern void _start(void) __attribute__((__noreturn__));
+
+  typedef struct {
+    uint32_t const* src;
+    uint32_t* dest;
+    uint32_t wlen;
+  } __copy_table_t;
+
+  typedef struct {
+    uint32_t* dest;
+    uint32_t wlen;
+  } __zero_table_t;
+
+  extern const __copy_table_t __copy_table_start__;
+  extern const __copy_table_t __copy_table_end__;
+  extern const __zero_table_t __zero_table_start__;
+  extern const __zero_table_t __zero_table_end__;
+
+  for (__copy_table_t const* pTable = &__copy_table_start__; pTable < &__copy_table_end__; ++pTable) {
+    for(uint32_t i=0u; i<pTable->wlen; ++i) {
+      pTable->dest[i] = pTable->src[i];
+    }
+  }
+
+  for (__zero_table_t const* pTable = &__zero_table_start__; pTable < &__zero_table_end__; ++pTable) {
+    for(uint32_t i=0u; i<pTable->wlen; ++i) {
+      pTable->dest[i] = 0u;
+    }
+  }
+
+  _start();
+}
+# 258 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __ISB(void)
+{
+  __asm volatile ("isb 0xF":::"memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __DSB(void)
+{
+  __asm volatile ("dsb 0xF":::"memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __DMB(void)
+{
+  __asm volatile ("dmb 0xF":::"memory");
+}
+# 292 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __REV(uint32_t value)
+{
+
+  return __builtin_bswap32(value);
+
+
+
+
+
+
+}
+# 311 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __REV16(uint32_t value)
+{
+  uint32_t result;
+
+  __asm ("rev16 %0, %1" : "=r" (result) : "r" (value) );
+  return result;
+}
+# 326 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline int16_t __REVSH(int16_t value)
+{
+
+  return (int16_t)__builtin_bswap16(value);
+
+
+
+
+
+
+}
+# 346 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __ROR(uint32_t op1, uint32_t op2)
+{
+  op2 %= 32U;
+  if (op2 == 0U)
+  {
+    return op1;
+  }
+  return (op1 >> op2) | (op1 << (32U - op2));
+}
+# 373 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __RBIT(uint32_t value)
+{
+  uint32_t result;
+
+
+
+
+   __asm ("rbit %0, %1" : "=r" (result) : "r" (value) );
+# 393 "cmsis_gcc.h"
+  return result;
+}
+# 403 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint8_t __CLZ(uint32_t value)
+{
+# 414 "cmsis_gcc.h"
+  if (value == 0U)
+  {
+    return 32U;
+  }
+  return __builtin_clz(value);
+}
+# 432 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint8_t __LDREXB(volatile uint8_t *addr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrexb %0, %1" : "=r" (result) : "Q" (*addr) );
+
+
+
+
+
+
+   return ((uint8_t) result);
+}
+# 454 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint16_t __LDREXH(volatile uint16_t *addr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrexh %0, %1" : "=r" (result) : "Q" (*addr) );
+
+
+
+
+
+
+   return ((uint16_t) result);
+}
+# 476 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __LDREXW(volatile uint32_t *addr)
+{
+    uint32_t result;
+
+   __asm volatile ("ldrex %0, %1" : "=r" (result) : "Q" (*addr) );
+   return(result);
+}
+# 493 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __STREXB(uint8_t value, volatile uint8_t *addr)
+{
+   uint32_t result;
+
+   __asm volatile ("strexb %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" ((uint32_t)value) );
+   return(result);
+}
+# 510 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __STREXH(uint16_t value, volatile uint16_t *addr)
+{
+   uint32_t result;
+
+   __asm volatile ("strexh %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" ((uint32_t)value) );
+   return(result);
+}
+# 527 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __STREXW(uint32_t value, volatile uint32_t *addr)
+{
+   uint32_t result;
+
+   __asm volatile ("strex %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" (value) );
+   return(result);
+}
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __CLREX(void)
+{
+  __asm volatile ("clrex" ::: "memory");
+}
+# 593 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __RRX(uint32_t value)
+{
+  uint32_t result;
+
+  __asm volatile ("rrx %0, %1" : "=r" (result) : "r" (value) );
+  return(result);
+}
+# 608 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint8_t __LDRBT(volatile uint8_t *ptr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrbt %0, %1" : "=r" (result) : "Q" (*ptr) );
+
+
+
+
+
+
+   return ((uint8_t) result);
+}
+# 630 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint16_t __LDRHT(volatile uint16_t *ptr)
+{
+    uint32_t result;
+
+
+   __asm volatile ("ldrht %0, %1" : "=r" (result) : "Q" (*ptr) );
+
+
+
+
+
+
+   return ((uint16_t) result);
+}
+# 652 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __LDRT(volatile uint32_t *ptr)
+{
+    uint32_t result;
+
+   __asm volatile ("ldrt %0, %1" : "=r" (result) : "Q" (*ptr) );
+   return(result);
+}
+# 667 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __STRBT(uint8_t value, volatile uint8_t *ptr)
+{
+   __asm volatile ("strbt %1, %0" : "=Q" (*ptr) : "r" ((uint32_t)value) );
+}
+# 679 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __STRHT(uint16_t value, volatile uint16_t *ptr)
+{
+   __asm volatile ("strht %1, %0" : "=Q" (*ptr) : "r" ((uint32_t)value) );
+}
+# 691 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __STRT(uint32_t value, volatile uint32_t *ptr)
+{
+   __asm volatile ("strt %1, %0" : "=Q" (*ptr) : "r" (value) );
+}
+# 949 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __enable_irq(void)
+{
+  __asm volatile ("cpsie i" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __disable_irq(void)
+{
+  __asm volatile ("cpsid i" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_CONTROL(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, control" : "=r" (result) );
+  return(result);
+}
+# 1001 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_CONTROL(uint32_t control)
+{
+  __asm volatile ("MSR control, %0" : : "r" (control) : "memory");
+  __ISB();
+}
+# 1027 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_IPSR(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, ipsr" : "=r" (result) );
+  return(result);
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_APSR(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, apsr" : "=r" (result) );
+  return(result);
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_xPSR(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, xpsr" : "=r" (result) );
+  return(result);
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_PSP(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, psp" : "=r" (result) );
+  return(result);
+}
+# 1099 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_PSP(uint32_t topOfProcStack)
+{
+  __asm volatile ("MSR psp, %0" : : "r" (topOfProcStack) : );
+}
+# 1123 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_MSP(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, msp" : "=r" (result) );
+  return(result);
+}
+# 1153 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_MSP(uint32_t topOfMainStack)
+{
+  __asm volatile ("MSR msp, %0" : : "r" (topOfMainStack) : );
+}
+# 1204 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_PRIMASK(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, primask" : "=r" (result) );
+  return(result);
+}
+# 1234 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_PRIMASK(uint32_t priMask)
+{
+  __asm volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
+}
+# 1261 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __enable_fault_irq(void)
+{
+  __asm volatile ("cpsie f" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __disable_fault_irq(void)
+{
+  __asm volatile ("cpsid f" : : : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_BASEPRI(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, basepri" : "=r" (result) );
+  return(result);
+}
+# 1313 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_BASEPRI(uint32_t basePri)
+{
+  __asm volatile ("MSR basepri, %0" : : "r" (basePri) : "memory");
+}
+# 1338 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_BASEPRI_MAX(uint32_t basePri)
+{
+  __asm volatile ("MSR basepri_max, %0" : : "r" (basePri) : "memory");
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline uint32_t __get_FAULTMASK(void)
+{
+  uint32_t result;
+
+  __asm volatile ("MRS %0, faultmask" : "=r" (result) );
+  return(result);
+}
+# 1379 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline void __set_FAULTMASK(uint32_t faultMask)
+{
+  __asm volatile ("MSR faultmask, %0" : : "r" (faultMask) : "memory");
+}
+# 1588 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __get_FPSCR(void)
+{
+# 1604 "cmsis_gcc.h"
+  return(0U);
+
+}
+
+
+
+
+
+
+
+__attribute__((always_inline)) static inline void __set_FPSCR(uint32_t fpscr)
+{
+# 1627 "cmsis_gcc.h"
+  (void)fpscr;
+
+}
+# 1643 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __SADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("uadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHADD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhadd8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+
+__attribute__((always_inline)) static inline uint32_t __SSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("ssub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("usub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHSUB8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhsub8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+
+__attribute__((always_inline)) static inline uint32_t __SADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("uadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHADD16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhadd16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("ssub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("usub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHSUB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhsub16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("uasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHASX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhasx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("ssax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __QSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("qsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SHSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("shsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("usax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UQSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uqsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UHSAX(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uhsax %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USAD8(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("usad8 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __USADA8(uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm ("usada8 %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+# 1965 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline uint32_t __UXTB16(uint32_t op1)
+{
+  uint32_t result;
+
+  __asm ("uxtb16 %0, %1" : "=r" (result) : "r" (op1));
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __UXTAB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("uxtab16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTB16(uint32_t op1)
+{
+  uint32_t result;
+
+  __asm ("sxtb16 %0, %1" : "=r" (result) : "r" (op1));
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTB16_RORn(uint32_t op1, uint32_t rotate)
+{
+  uint32_t result;
+  if (__builtin_constant_p(rotate) && ((rotate == 8U) || (rotate == 16U) || (rotate == 24U))) {
+    __asm volatile ("sxtb16 %0, %1, ROR %2" : "=r" (result) : "r" (op1), "i" (rotate) );
+  } else {
+    result = __SXTB16(__ROR(op1, rotate)) ;
+  }
+  return result;
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTAB16(uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm ("sxtab16 %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SXTAB16_RORn(uint32_t op1, uint32_t op2, uint32_t rotate)
+{
+  uint32_t result;
+  if (__builtin_constant_p(rotate) && ((rotate == 8U) || (rotate == 16U) || (rotate == 24U))) {
+    __asm volatile ("sxtab16 %0, %1, %2, ROR %3" : "=r" (result) : "r" (op1) , "r" (op2) , "i" (rotate));
+  } else {
+    result = __SXTAB16(op1, __ROR(op2, rotate));
+  }
+  return result;
+}
+
+
+__attribute__((always_inline)) static inline uint32_t __SMUAD (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smuad %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMUADX (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smuadx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLAD (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smlad %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLADX (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smladx %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLALD (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlald %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLALDX (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlaldx %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMUSD (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smusd %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMUSDX (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("smusdx %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLSD (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smlsd %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SMLSDX (uint32_t op1, uint32_t op2, uint32_t op3)
+{
+  uint32_t result;
+
+  __asm volatile ("smlsdx %0, %1, %2, %3" : "=r" (result) : "r" (op1), "r" (op2), "r" (op3) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLSLD (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlsld %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint64_t __SMLSLDX (uint32_t op1, uint32_t op2, uint64_t acc)
+{
+  union llreg_u{
+    uint32_t w32[2];
+    uint64_t w64;
+  } llr;
+  llr.w64 = acc;
+
+
+  __asm volatile ("smlsldx %0, %1, %2, %3" : "=r" (llr.w32[0]), "=r" (llr.w32[1]): "r" (op1), "r" (op2) , "0" (llr.w32[0]), "1" (llr.w32[1]) );
+
+
+
+
+  return(llr.w64);
+}
+
+__attribute__((always_inline)) static inline uint32_t __SEL (uint32_t op1, uint32_t op2)
+{
+  uint32_t result;
+
+  __asm volatile ("sel %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline int32_t __QADD( int32_t op1, int32_t op2)
+{
+  int32_t result;
+
+  __asm volatile ("qadd %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+
+__attribute__((always_inline)) static inline int32_t __QSUB( int32_t op1, int32_t op2)
+{
+  int32_t result;
+
+  __asm volatile ("qsub %0, %1, %2" : "=r" (result) : "r" (op1), "r" (op2) );
+  return(result);
+}
+# 2197 "cmsis_gcc.h"
+__attribute__((always_inline)) static inline int32_t __SMMLA (int32_t op1, int32_t op2, int32_t op3)
+{
+ int32_t result;
+
+ __asm ("smmla %0, %1, %2, %3" : "=r" (result): "r" (op1), "r" (op2), "r" (op3) );
+ return(result);
+}
+
+
+
+
+
+#pragma GCC diagnostic pop
+# 30 "cmsis_compiler.h" 2
+# 163 "core_cm4.h" 2
+
+
+
+}
+# 177 "core_cm4.h"
+ extern "C" {
+# 264 "core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t _reserved0:16;
+    uint32_t GE:4;
+    uint32_t _reserved1:7;
+    uint32_t Q:1;
+    uint32_t V:1;
+    uint32_t C:1;
+    uint32_t Z:1;
+    uint32_t N:1;
+  } b;
+  uint32_t w;
+} APSR_Type;
+# 303 "core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t ISR:9;
+    uint32_t _reserved0:23;
+  } b;
+  uint32_t w;
+} IPSR_Type;
+# 321 "core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t ISR:9;
+    uint32_t _reserved0:1;
+    uint32_t ICI_IT_1:6;
+    uint32_t GE:4;
+    uint32_t _reserved1:4;
+    uint32_t T:1;
+    uint32_t ICI_IT_2:2;
+    uint32_t Q:1;
+    uint32_t V:1;
+    uint32_t C:1;
+    uint32_t Z:1;
+    uint32_t N:1;
+  } b;
+  uint32_t w;
+} xPSR_Type;
+# 376 "core_cm4.h"
+typedef union
+{
+  struct
+  {
+    uint32_t nPRIV:1;
+    uint32_t SPSEL:1;
+    uint32_t FPCA:1;
+    uint32_t _reserved0:29;
+  } b;
+  uint32_t w;
+} CONTROL_Type;
+# 411 "core_cm4.h"
+typedef struct
+{
+  volatile uint32_t ISER[8U];
+        uint32_t RESERVED0[24U];
+  volatile uint32_t ICER[8U];
+        uint32_t RESERVED1[24U];
+  volatile uint32_t ISPR[8U];
+        uint32_t RESERVED2[24U];
+  volatile uint32_t ICPR[8U];
+        uint32_t RESERVED3[24U];
+  volatile uint32_t IABR[8U];
+        uint32_t RESERVED4[56U];
+  volatile uint8_t IP[240U];
+        uint32_t RESERVED5[644U];
+  volatile uint32_t STIR;
+} NVIC_Type;
+# 445 "core_cm4.h"
+typedef struct
+{
+  volatile const uint32_t CPUID;
+  volatile uint32_t ICSR;
+  volatile uint32_t VTOR;
+  volatile uint32_t AIRCR;
+  volatile uint32_t SCR;
+  volatile uint32_t CCR;
+  volatile uint8_t SHP[12U];
+  volatile uint32_t SHCSR;
+  volatile uint32_t CFSR;
+  volatile uint32_t HFSR;
+  volatile uint32_t DFSR;
+  volatile uint32_t MMFAR;
+  volatile uint32_t BFAR;
+  volatile uint32_t AFSR;
+  volatile const uint32_t PFR[2U];
+  volatile const uint32_t DFR;
+  volatile const uint32_t ADR;
+  volatile const uint32_t MMFR[4U];
+  volatile const uint32_t ISAR[5U];
+        uint32_t RESERVED0[5U];
+  volatile uint32_t CPACR;
+} SCB_Type;
+# 724 "core_cm4.h"
+typedef struct
+{
+        uint32_t RESERVED0[1U];
+  volatile const uint32_t ICTR;
+  volatile uint32_t ACTLR;
+} SCnSCB_Type;
+# 764 "core_cm4.h"
+typedef struct
+{
+  volatile uint32_t CTRL;
+  volatile uint32_t LOAD;
+  volatile uint32_t VAL;
+  volatile const uint32_t CALIB;
+} SysTick_Type;
+# 816 "core_cm4.h"
+typedef struct
+{
+  volatile union
+  {
+    volatile uint8_t u8;
+    volatile uint16_t u16;
+    volatile uint32_t u32;
+  } PORT [32U];
+        uint32_t RESERVED0[864U];
+  volatile uint32_t TER;
+        uint32_t RESERVED1[15U];
+  volatile uint32_t TPR;
+        uint32_t RESERVED2[15U];
+  volatile uint32_t TCR;
+        uint32_t RESERVED3[32U];
+        uint32_t RESERVED4[43U];
+  volatile uint32_t LAR;
+  volatile const uint32_t LSR;
+        uint32_t RESERVED5[6U];
+  volatile const uint32_t PID4;
+  volatile const uint32_t PID5;
+  volatile const uint32_t PID6;
+  volatile const uint32_t PID7;
+  volatile const uint32_t PID0;
+  volatile const uint32_t PID1;
+  volatile const uint32_t PID2;
+  volatile const uint32_t PID3;
+  volatile const uint32_t CID0;
+  volatile const uint32_t CID1;
+  volatile const uint32_t CID2;
+  volatile const uint32_t CID3;
+} ITM_Type;
+# 904 "core_cm4.h"
+typedef struct
+{
+  volatile uint32_t CTRL;
+  volatile uint32_t CYCCNT;
+  volatile uint32_t CPICNT;
+  volatile uint32_t EXCCNT;
+  volatile uint32_t SLEEPCNT;
+  volatile uint32_t LSUCNT;
+  volatile uint32_t FOLDCNT;
+  volatile const uint32_t PCSR;
+  volatile uint32_t COMP0;
+  volatile uint32_t MASK0;
+  volatile uint32_t FUNCTION0;
+        uint32_t RESERVED0[1U];
+  volatile uint32_t COMP1;
+  volatile uint32_t MASK1;
+  volatile uint32_t FUNCTION1;
+        uint32_t RESERVED1[1U];
+  volatile uint32_t COMP2;
+  volatile uint32_t MASK2;
+  volatile uint32_t FUNCTION2;
+        uint32_t RESERVED2[1U];
+  volatile uint32_t COMP3;
+  volatile uint32_t MASK3;
+  volatile uint32_t FUNCTION3;
+} DWT_Type;
+# 1051 "core_cm4.h"
+typedef struct
+{
+  volatile const uint32_t SSPSR;
+  volatile uint32_t CSPSR;
+        uint32_t RESERVED0[2U];
+  volatile uint32_t ACPR;
+        uint32_t RESERVED1[55U];
+  volatile uint32_t SPPR;
+        uint32_t RESERVED2[131U];
+  volatile const uint32_t FFSR;
+  volatile uint32_t FFCR;
+  volatile const uint32_t FSCR;
+        uint32_t RESERVED3[759U];
+  volatile const uint32_t TRIGGER;
+  volatile const uint32_t FIFO0;
+  volatile const uint32_t ITATBCTR2;
+        uint32_t RESERVED4[1U];
+  volatile const uint32_t ITATBCTR0;
+  volatile const uint32_t FIFO1;
+  volatile uint32_t ITCTRL;
+        uint32_t RESERVED5[39U];
+  volatile uint32_t CLAIMSET;
+  volatile uint32_t CLAIMCLR;
+        uint32_t RESERVED7[8U];
+  volatile const uint32_t DEVID;
+  volatile const uint32_t DEVTYPE;
+} TPI_Type;
+# 1213 "core_cm4.h"
+typedef struct
+{
+  volatile const uint32_t TYPE;
+  volatile uint32_t CTRL;
+  volatile uint32_t RNR;
+  volatile uint32_t RBAR;
+  volatile uint32_t RASR;
+  volatile uint32_t RBAR_A1;
+  volatile uint32_t RASR_A1;
+  volatile uint32_t RBAR_A2;
+  volatile uint32_t RASR_A2;
+  volatile uint32_t RBAR_A3;
+  volatile uint32_t RASR_A3;
+} MPU_Type;
+# 1309 "core_cm4.h"
+typedef struct
+{
+        uint32_t RESERVED0[1U];
+  volatile uint32_t FPCCR;
+  volatile uint32_t FPCAR;
+  volatile uint32_t FPDSCR;
+  volatile const uint32_t MVFR0;
+  volatile const uint32_t MVFR1;
+  volatile const uint32_t MVFR2;
+} FPU_Type;
+# 1421 "core_cm4.h"
+typedef struct
+{
+  volatile uint32_t DHCSR;
+  volatile uint32_t DCRSR;
+  volatile uint32_t DCRDR;
+  volatile uint32_t DEMCR;
+} CoreDebug_Type;
+# 1653 "core_cm4.h"
+static inline void __NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+{
+  uint32_t reg_value;
+  uint32_t PriorityGroupTmp = (PriorityGroup & (uint32_t)0x07UL);
+
+  reg_value = ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR;
+  reg_value &= ~((uint32_t)((0xFFFFUL << 16U) | (7UL << 8U)));
+  reg_value = (reg_value |
+                ((uint32_t)0x5FAUL << 16U) |
+                (PriorityGroupTmp << 8U) );
+  ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR = reg_value;
+}
+
+
+
+
+
+
+
+static inline uint32_t __NVIC_GetPriorityGrouping(void)
+{
+  return ((uint32_t)((((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR & (7UL << 8U)) >> 8U));
+}
+# 1684 "core_cm4.h"
+static inline void __NVIC_EnableIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    __asm volatile("":::"memory");
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISER[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+    __asm volatile("":::"memory");
+  }
+}
+# 1703 "core_cm4.h"
+static inline uint32_t __NVIC_GetEnableIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return((uint32_t)(((((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISER[(((uint32_t)IRQn) >> 5UL)] & (1UL << (((uint32_t)IRQn) & 0x1FUL))) != 0UL) ? 1UL : 0UL));
+  }
+  else
+  {
+    return(0U);
+  }
+}
+# 1722 "core_cm4.h"
+static inline void __NVIC_DisableIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ICER[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+    __DSB();
+    __ISB();
+  }
+}
+# 1741 "core_cm4.h"
+static inline uint32_t __NVIC_GetPendingIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return((uint32_t)(((((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISPR[(((uint32_t)IRQn) >> 5UL)] & (1UL << (((uint32_t)IRQn) & 0x1FUL))) != 0UL) ? 1UL : 0UL));
+  }
+  else
+  {
+    return(0U);
+  }
+}
+# 1760 "core_cm4.h"
+static inline void __NVIC_SetPendingIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ISPR[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+  }
+}
+# 1775 "core_cm4.h"
+static inline void __NVIC_ClearPendingIRQ(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->ICPR[(((uint32_t)IRQn) >> 5UL)] = (uint32_t)(1UL << (((uint32_t)IRQn) & 0x1FUL));
+  }
+}
+# 1792 "core_cm4.h"
+static inline uint32_t __NVIC_GetActive(IRQn_Type IRQn)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return((uint32_t)(((((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->IABR[(((uint32_t)IRQn) >> 5UL)] & (1UL << (((uint32_t)IRQn) & 0x1FUL))) != 0UL) ? 1UL : 0UL));
+  }
+  else
+  {
+    return(0U);
+  }
+}
+# 1814 "core_cm4.h"
+static inline void __NVIC_SetPriority(IRQn_Type IRQn, uint32_t priority)
+{
+  if ((int32_t)(IRQn) >= 0)
+  {
+    ((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->IP[((uint32_t)IRQn)] = (uint8_t)((priority << (8U - 4U)) & (uint32_t)0xFFUL);
+  }
+  else
+  {
+    ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->SHP[(((uint32_t)IRQn) & 0xFUL)-4UL] = (uint8_t)((priority << (8U - 4U)) & (uint32_t)0xFFUL);
+  }
+}
+# 1836 "core_cm4.h"
+static inline uint32_t __NVIC_GetPriority(IRQn_Type IRQn)
+{
+
+  if ((int32_t)(IRQn) >= 0)
+  {
+    return(((uint32_t)((NVIC_Type *) ((0xE000E000UL) + 0x0100UL) )->IP[((uint32_t)IRQn)] >> (8U - 4U)));
+  }
+  else
+  {
+    return(((uint32_t)((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->SHP[(((uint32_t)IRQn) & 0xFUL)-4UL] >> (8U - 4U)));
+  }
+}
+# 1861 "core_cm4.h"
+static inline uint32_t NVIC_EncodePriority (uint32_t PriorityGroup, uint32_t PreemptPriority, uint32_t SubPriority)
+{
+  uint32_t PriorityGroupTmp = (PriorityGroup & (uint32_t)0x07UL);
+  uint32_t PreemptPriorityBits;
+  uint32_t SubPriorityBits;
+
+  PreemptPriorityBits = ((7UL - PriorityGroupTmp) > (uint32_t)(4U)) ? (uint32_t)(4U) : (uint32_t)(7UL - PriorityGroupTmp);
+  SubPriorityBits = ((PriorityGroupTmp + (uint32_t)(4U)) < (uint32_t)7UL) ? (uint32_t)0UL : (uint32_t)((PriorityGroupTmp - 7UL) + (uint32_t)(4U));
+
+  return (
+           ((PreemptPriority & (uint32_t)((1UL << (PreemptPriorityBits)) - 1UL)) << SubPriorityBits) |
+           ((SubPriority & (uint32_t)((1UL << (SubPriorityBits )) - 1UL)))
+         );
+}
+# 1888 "core_cm4.h"
+static inline void NVIC_DecodePriority (uint32_t Priority, uint32_t PriorityGroup, uint32_t* const pPreemptPriority, uint32_t* const pSubPriority)
+{
+  uint32_t PriorityGroupTmp = (PriorityGroup & (uint32_t)0x07UL);
+  uint32_t PreemptPriorityBits;
+  uint32_t SubPriorityBits;
+
+  PreemptPriorityBits = ((7UL - PriorityGroupTmp) > (uint32_t)(4U)) ? (uint32_t)(4U) : (uint32_t)(7UL - PriorityGroupTmp);
+  SubPriorityBits = ((PriorityGroupTmp + (uint32_t)(4U)) < (uint32_t)7UL) ? (uint32_t)0UL : (uint32_t)((PriorityGroupTmp - 7UL) + (uint32_t)(4U));
+
+  *pPreemptPriority = (Priority >> SubPriorityBits) & (uint32_t)((1UL << (PreemptPriorityBits)) - 1UL);
+  *pSubPriority = (Priority ) & (uint32_t)((1UL << (SubPriorityBits )) - 1UL);
+}
+# 1911 "core_cm4.h"
+static inline void __NVIC_SetVector(IRQn_Type IRQn, uint32_t vector)
+{
+  uint32_t *vectors = (uint32_t *)((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->VTOR;
+  vectors[(int32_t)IRQn + 16] = vector;
+
+}
+# 1927 "core_cm4.h"
+static inline uint32_t __NVIC_GetVector(IRQn_Type IRQn)
+{
+  uint32_t *vectors = (uint32_t *)((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->VTOR;
+  return vectors[(int32_t)IRQn + 16];
+}
+
+
+
+
+
+
+__attribute__((__noreturn__)) static inline void __NVIC_SystemReset(void)
+{
+  __DSB();
+
+  ((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR = (uint32_t)((0x5FAUL << 16U) |
+                           (((SCB_Type *) ((0xE000E000UL) + 0x0D00UL) )->AIRCR & (7UL << 8U)) |
+                            (1UL << 2U) );
+  __DSB();
+
+  for(;;)
+  {
+    __asm volatile ("nop");
+  }
+}
+# 1981 "core_cm4.h"
+static inline uint32_t SCB_GetFPUType(void)
+{
+  uint32_t mvfr0;
+
+  mvfr0 = ((FPU_Type *) ((0xE000E000UL) + 0x0F30UL) )->MVFR0;
+  if ((mvfr0 & ((0xFUL << 4U) | (0xFUL << 8U))) == 0x020U)
+  {
+    return 1U;
+  }
+  else
+  {
+    return 0U;
+  }
+}
+# 2022 "core_cm4.h"
+static inline uint32_t SysTick_Config(uint32_t ticks)
+{
+  if ((ticks - 1UL) > (0xFFFFFFUL ))
+  {
+    return (1UL);
+  }
+
+  ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->LOAD = (uint32_t)(ticks - 1UL);
+  __NVIC_SetPriority (SysTick_IRQn, (1UL << 4U) - 1UL);
+  ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->VAL = 0UL;
+  ((SysTick_Type *) ((0xE000E000UL) + 0x0010UL) )->CTRL = (1UL << 2U) |
+                   (1UL << 1U) |
+                   (1UL );
+  return (0UL);
+}
+# 2052 "core_cm4.h"
+extern volatile int32_t ITM_RxBuffer;
+# 2064 "core_cm4.h"
+static inline uint32_t ITM_SendChar (uint32_t ch)
+{
+  if (((((ITM_Type *) (0xE0000000UL) )->TCR & (1UL )) != 0UL) &&
+      ((((ITM_Type *) (0xE0000000UL) )->TER & 1UL ) != 0UL) )
+  {
+    while (((ITM_Type *) (0xE0000000UL) )->PORT[0U].u32 == 0UL)
+    {
+      __asm volatile ("nop");
+    }
+    ((ITM_Type *) (0xE0000000UL) )->PORT[0U].u8 = (uint8_t)ch;
+  }
+  return (ch);
+}
+# 2085 "core_cm4.h"
+static inline int32_t ITM_ReceiveChar (void)
+{
+  int32_t ch = -1;
+
+  if (ITM_RxBuffer != ((int32_t)0x5AA55AA5U))
+  {
+    ch = ITM_RxBuffer;
+    ITM_RxBuffer = ((int32_t)0x5AA55AA5U);
+  }
+
+  return (ch);
+}
+# 2105 "core_cm4.h"
+static inline int32_t ITM_CheckChar (void)
+{
+
+  if (ITM_RxBuffer == ((int32_t)0x5AA55AA5U))
+  {
+    return (0);
+  }
+  else
+  {
+    return (1);
+  }
+}
+
+
+
+
+
+
+
+}
+# 171 "stm32f446re.h" 2
+# 1 "system_stm32f4xx.h" 1
+# 51 "system_stm32f4xx.h"
+ extern "C" {
+# 74 "system_stm32f4xx.h"
+extern uint32_t SystemCoreClock;
+
+extern const uint8_t AHBPrescTable[16];
+extern const uint8_t APBPrescTable[8];
+# 103 "system_stm32f4xx.h"
+extern void SystemInit(void);
+extern void SystemCoreClockUpdate(void);
+
+
+
+
+
+}
+# 172 "stm32f446re.h" 2
+# 182 "stm32f446re.h"
+typedef struct
+{
+  uint32_t SR;
+  uint32_t CR1;
+  uint32_t CR2;
+  uint32_t SMPR1;
+  uint32_t SMPR2;
+  uint32_t JOFR1;
+  uint32_t JOFR2;
+  uint32_t JOFR3;
+  uint32_t JOFR4;
+  uint32_t HTR;
+  uint32_t LTR;
+  uint32_t SQR1;
+  uint32_t SQR2;
+  uint32_t SQR3;
+  uint32_t JSQR;
+  uint32_t JDR1;
+  uint32_t JDR2;
+  uint32_t JDR3;
+  uint32_t JDR4;
+  uint32_t DR;
+} ADC_TypeDef;
+
+typedef struct
+{
+  uint32_t CSR;
+  uint32_t CCR;
+  uint32_t CDR;
+
+} ADC_Common_TypeDef;
+
+
+
+
+
+
+typedef struct
+{
+  uint32_t TIR;
+  uint32_t TDTR;
+  uint32_t TDLR;
+  uint32_t TDHR;
+} CAN_TxMailBox_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t RIR;
+  uint32_t RDTR;
+  uint32_t RDLR;
+  uint32_t RDHR;
+} CAN_FIFOMailBox_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t FR1;
+  uint32_t FR2;
+} CAN_FilterRegister_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t MCR;
+  uint32_t MSR;
+  uint32_t TSR;
+  uint32_t RF0R;
+  uint32_t RF1R;
+  uint32_t IER;
+  uint32_t ESR;
+  uint32_t BTR;
+  uint32_t RESERVED0[88];
+  CAN_TxMailBox_TypeDef sTxMailBox[3];
+  CAN_FIFOMailBox_TypeDef sFIFOMailBox[2];
+  uint32_t RESERVED1[12];
+  uint32_t FMR;
+  uint32_t FM1R;
+  uint32_t RESERVED2;
+  uint32_t FS1R;
+  uint32_t RESERVED3;
+  uint32_t FFA1R;
+  uint32_t RESERVED4;
+  uint32_t FA1R;
+  uint32_t RESERVED5[8];
+  CAN_FilterRegister_TypeDef sFilterRegister[28];
+} CAN_TypeDef;
+
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t CFGR;
+  uint32_t TXDR;
+  uint32_t RXDR;
+  uint32_t ISR;
+  uint32_t IER;
+}CEC_TypeDef;
+
+
+
+
+typedef struct
+{
+  uint32_t DR;
+  uint8_t IDR;
+  uint8_t RESERVED0;
+  uint16_t RESERVED1;
+  uint32_t CR;
+} CRC_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t SWTRIGR;
+  uint32_t DHR12R1;
+  uint32_t DHR12L1;
+  uint32_t DHR8R1;
+  uint32_t DHR12R2;
+  uint32_t DHR12L2;
+  uint32_t DHR8R2;
+  uint32_t DHR12RD;
+  uint32_t DHR12LD;
+  uint32_t DHR8RD;
+  uint32_t DOR1;
+  uint32_t DOR2;
+  uint32_t SR;
+} DAC_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t IDCODE;
+  uint32_t CR;
+  uint32_t APB1FZ;
+  uint32_t APB2FZ;
+}DBGMCU_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t SR;
+  uint32_t RISR;
+  uint32_t IER;
+  uint32_t MISR;
+  uint32_t ICR;
+  uint32_t ESCR;
+  uint32_t ESUR;
+  uint32_t CWSTRTR;
+  uint32_t CWSIZER;
+  uint32_t DR;
+} DCMI_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t NDTR;
+  uint32_t PAR;
+  uint32_t M0AR;
+  uint32_t M1AR;
+  uint32_t FCR;
+} DMA_Stream_TypeDef;
+
+typedef struct
+{
+  uint32_t LISR;
+  uint32_t HISR;
+  uint32_t LIFCR;
+  uint32_t HIFCR;
+} DMA_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t IMR;
+  uint32_t EMR;
+  uint32_t RTSR;
+  uint32_t FTSR;
+  uint32_t SWIER;
+  uint32_t PR;
+} EXTI_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t ACR;
+  uint32_t KEYR;
+  uint32_t OPTKEYR;
+  uint32_t SR;
+  uint32_t CR;
+  uint32_t OPTCR;
+  uint32_t OPTCR1;
+} FLASH_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t BTCR[8];
+} FMC_Bank1_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t BWTR[7];
+} FMC_Bank1E_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t PCR;
+  uint32_t SR;
+  uint32_t PMEM;
+  uint32_t PATT;
+  uint32_t RESERVED;
+  uint32_t ECCR;
+} FMC_Bank3_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t SDCR[2];
+  uint32_t SDTR[2];
+  uint32_t SDCMR;
+  uint32_t SDRTR;
+  uint32_t SDSR;
+} FMC_Bank5_6_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t MODER;
+  uint32_t OTYPER;
+  uint32_t OSPEEDR;
+  uint32_t PUPDR;
+  uint32_t IDR;
+  uint32_t ODR;
+  uint32_t BSRR;
+  uint32_t LCKR;
+  uint32_t AFR[2];
+} GPIO_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t MEMRMP;
+  uint32_t PMC;
+  uint32_t EXTICR[4];
+  uint32_t RESERVED[2];
+  uint32_t CMPCR;
+  uint32_t RESERVED1[2];
+  uint32_t CFGR;
+} SYSCFG_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR1;
+  uint32_t CR2;
+  uint32_t OAR1;
+  uint32_t OAR2;
+  uint32_t DR;
+  uint32_t SR1;
+  uint32_t SR2;
+  uint32_t CCR;
+  uint32_t TRISE;
+  uint32_t FLTR;
+} I2C_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR1;
+  uint32_t CR2;
+  uint32_t OAR1;
+  uint32_t OAR2;
+  uint32_t TIMINGR;
+  uint32_t TIMEOUTR;
+  uint32_t ISR;
+  uint32_t ICR;
+  uint32_t PECR;
+  uint32_t RXDR;
+  uint32_t TXDR;
+} FMPI2C_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t KR;
+  uint32_t PR;
+  uint32_t RLR;
+  uint32_t SR;
+} IWDG_TypeDef;
+
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t CSR;
+} PWR_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t PLLCFGR;
+  uint32_t CFGR;
+  uint32_t CIR;
+  uint32_t AHB1RSTR;
+  uint32_t AHB2RSTR;
+  uint32_t AHB3RSTR;
+  uint32_t RESERVED0;
+  uint32_t APB1RSTR;
+  uint32_t APB2RSTR;
+  uint32_t RESERVED1[2];
+  uint32_t AHB1ENR;
+  uint32_t AHB2ENR;
+  uint32_t AHB3ENR;
+  uint32_t RESERVED2;
+  uint32_t APB1ENR;
+  uint32_t APB2ENR;
+  uint32_t RESERVED3[2];
+  uint32_t AHB1LPENR;
+  uint32_t AHB2LPENR;
+  uint32_t AHB3LPENR;
+  uint32_t RESERVED4;
+  uint32_t APB1LPENR;
+  uint32_t APB2LPENR;
+  uint32_t RESERVED5[2];
+  uint32_t BDCR;
+  uint32_t CSR;
+  uint32_t RESERVED6[2];
+  uint32_t SSCGR;
+  uint32_t PLLI2SCFGR;
+  uint32_t PLLSAICFGR;
+  uint32_t DCKCFGR;
+  uint32_t CKGATENR;
+  uint32_t DCKCFGR2;
+} RCC_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t TR;
+  uint32_t DR;
+  uint32_t CR;
+  uint32_t ISR;
+  uint32_t PRER;
+  uint32_t WUTR;
+  uint32_t CALIBR;
+  uint32_t ALRMAR;
+  uint32_t ALRMBR;
+  uint32_t WPR;
+  uint32_t SSR;
+  uint32_t SHIFTR;
+  uint32_t TSTR;
+  uint32_t TSDR;
+  uint32_t TSSSR;
+  uint32_t CALR;
+  uint32_t TAFCR;
+  uint32_t ALRMASSR;
+  uint32_t ALRMBSSR;
+  uint32_t RESERVED7;
+  uint32_t BKP0R;
+  uint32_t BKP1R;
+  uint32_t BKP2R;
+  uint32_t BKP3R;
+  uint32_t BKP4R;
+  uint32_t BKP5R;
+  uint32_t BKP6R;
+  uint32_t BKP7R;
+  uint32_t BKP8R;
+  uint32_t BKP9R;
+  uint32_t BKP10R;
+  uint32_t BKP11R;
+  uint32_t BKP12R;
+  uint32_t BKP13R;
+  uint32_t BKP14R;
+  uint32_t BKP15R;
+  uint32_t BKP16R;
+  uint32_t BKP17R;
+  uint32_t BKP18R;
+  uint32_t BKP19R;
+} RTC_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t GCR;
+} SAI_TypeDef;
+
+typedef struct
+{
+  uint32_t CR1;
+  uint32_t CR2;
+  uint32_t FRCR;
+  uint32_t SLOTR;
+  uint32_t IMR;
+  uint32_t SR;
+  uint32_t CLRFR;
+  uint32_t DR;
+} SAI_Block_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t POWER;
+  uint32_t CLKCR;
+  uint32_t ARG;
+  uint32_t CMD;
+  const uint32_t RESPCMD;
+  const uint32_t RESP1;
+  const uint32_t RESP2;
+  const uint32_t RESP3;
+  const uint32_t RESP4;
+  uint32_t DTIMER;
+  uint32_t DLEN;
+  uint32_t DCTRL;
+  const uint32_t DCOUNT;
+  const uint32_t STA;
+  uint32_t ICR;
+  uint32_t MASK;
+  uint32_t RESERVED0[2];
+  const uint32_t FIFOCNT;
+  uint32_t RESERVED1[13];
+  uint32_t FIFO;
+} SDIO_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR1;
+  uint32_t CR2;
+  uint32_t SR;
+  uint32_t DR;
+  uint32_t CRCPR;
+  uint32_t RXCRCR;
+  uint32_t TXCRCR;
+  uint32_t I2SCFGR;
+  uint32_t I2SPR;
+} SPI_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t DCR;
+  uint32_t SR;
+  uint32_t FCR;
+  uint32_t DLR;
+  uint32_t CCR;
+  uint32_t AR;
+  uint32_t ABR;
+  uint32_t DR;
+  uint32_t PSMKR;
+  uint32_t PSMAR;
+  uint32_t PIR;
+  uint32_t LPTR;
+} QUADSPI_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint16_t IMR;
+  uint16_t RESERVED0;
+  uint32_t SR;
+  uint16_t IFCR;
+  uint16_t RESERVED1;
+  uint32_t DR;
+  uint32_t CSR;
+   uint32_t DIR;
+  uint16_t RESERVED2;
+} SPDIFRX_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR1;
+  uint32_t CR2;
+  uint32_t SMCR;
+  uint32_t DIER;
+  uint32_t SR;
+  uint32_t EGR;
+  uint32_t CCMR1;
+  uint32_t CCMR2;
+  uint32_t CCER;
+  uint32_t CNT;
+  uint32_t PSC;
+  uint32_t ARR;
+  uint32_t RCR;
+  uint32_t CCR1;
+  uint32_t CCR2;
+  uint32_t CCR3;
+  uint32_t CCR4;
+  uint32_t BDTR;
+  uint32_t DCR;
+  uint32_t DMAR;
+  uint32_t OR;
+} TIM_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t SR;
+  uint32_t DR;
+  uint32_t BRR;
+  uint32_t CR1;
+  uint32_t CR2;
+  uint32_t CR3;
+  uint32_t GTPR;
+} USART_TypeDef;
+
+
+
+
+
+typedef struct
+{
+  uint32_t CR;
+  uint32_t CFR;
+  uint32_t SR;
+} WWDG_TypeDef;
+
+
+
+typedef struct
+{
+  uint32_t GOTGCTL;
+  uint32_t GOTGINT;
+  uint32_t GAHBCFG;
+  uint32_t GUSBCFG;
+  uint32_t GRSTCTL;
+  uint32_t GINTSTS;
+  uint32_t GINTMSK;
+  uint32_t GRXSTSR;
+  uint32_t GRXSTSP;
+  uint32_t GRXFSIZ;
+  uint32_t DIEPTXF0_HNPTXFSIZ;
+  uint32_t HNPTXSTS;
+  uint32_t Reserved30[2];
+  uint32_t GCCFG;
+  uint32_t CID;
+  uint32_t Reserved5[3];
+  uint32_t GHWCFG3;
+  uint32_t Reserved6;
+  uint32_t GLPMCFG;
+  uint32_t Reserved;
+  uint32_t GDFIFOCFG;
+  uint32_t Reserved43[40];
+  uint32_t HPTXFSIZ;
+  uint32_t DIEPTXF[0x0F];
+} USB_OTG_GlobalTypeDef;
+
+
+
+
+typedef struct
+{
+  uint32_t DCFG;
+  uint32_t DCTL;
+  uint32_t DSTS;
+  uint32_t Reserved0C;
+  uint32_t DIEPMSK;
+  uint32_t DOEPMSK;
+  uint32_t DAINT;
+  uint32_t DAINTMSK;
+  uint32_t Reserved20;
+  uint32_t Reserved9;
+  uint32_t DVBUSDIS;
+  uint32_t DVBUSPULSE;
+  uint32_t DTHRCTL;
+  uint32_t DIEPEMPMSK;
+  uint32_t DEACHINT;
+  uint32_t DEACHMSK;
+  uint32_t Reserved40;
+  uint32_t DINEP1MSK;
+  uint32_t Reserved44[15];
+  uint32_t DOUTEP1MSK;
+} USB_OTG_DeviceTypeDef;
+
+
+
+
+typedef struct
+{
+  uint32_t DIEPCTL;
+  uint32_t Reserved04;
+  uint32_t DIEPINT;
+  uint32_t Reserved0C;
+  uint32_t DIEPTSIZ;
+  uint32_t DIEPDMA;
+  uint32_t DTXFSTS;
+  uint32_t Reserved18;
+} USB_OTG_INEndpointTypeDef;
+
+
+
+
+typedef struct
+{
+  uint32_t DOEPCTL;
+  uint32_t Reserved04;
+  uint32_t DOEPINT;
+  uint32_t Reserved0C;
+  uint32_t DOEPTSIZ;
+  uint32_t DOEPDMA;
+  uint32_t Reserved18[2];
+} USB_OTG_OUTEndpointTypeDef;
+
+
+
+
+typedef struct
+{
+  uint32_t HCFG;
+  uint32_t HFIR;
+  uint32_t HFNUM;
+  uint32_t Reserved40C;
+  uint32_t HPTXSTS;
+  uint32_t HAINT;
+  uint32_t HAINTMSK;
+} USB_OTG_HostTypeDef;
+
+
+
+
+typedef struct
+{
+  uint32_t HCCHAR;
+  uint32_t HCSPLT;
+  uint32_t HCINT;
+  uint32_t HCINTMSK;
+  uint32_t HCTSIZ;
+  uint32_t HCDMA;
+  uint32_t Reserved[2];
+} USB_OTG_HostChannelTypeDef;
+# 15979 "stm32f446re.h"
+}
+# 5 "gpio.h" 2
+# 24 "gpio.h"
+enum GPIO_ErrorType_t
+{
+ GPIO_OK,
+ GPIO_NOK,
+ GPIO_DEFAULT_ERR=0xFF
+};
+enum GPIO_PortName_t
+{
+ GPIO_PORT_A,
+ GPIO_PORT_B,
+ GPIO_PORT_C,
+ GPIO_PORT_D,
+ GPIO_PORT_E,
+ GPIO_PORT_H,
+ GPIO_PORT_MAX
+};
+enum GPIO_PinState_t
+{
+ GPIO_PIN_STATE_HIGH,
+ GPIO_PIN_STATE_LOW,
+ GPIO_PIN_STATE_DEFAULT=0xFF
+};
+enum GPIO_PinNumber_t
+{
+ GPIO_PIN_0 ,GPIO_PIN_1 ,GPIO_PIN_2 ,GPIO_PIN_3,
+ GPIO_PIN_4 ,GPIO_PIN_5 ,GPIO_PIN_6 ,GPIO_PIN_7,
+ GPIO_PIN_8 ,GPIO_PIN_9 ,GPIO_PIN_10,GPIO_PIN_11,
+ GPIO_PIN_12,GPIO_PIN_13,GPIO_PIN_14,GPIO_PIN_15,
+ GPIO_PIN_MAX
+};
+
+enum GPIO_PinMode_t
+{
+ GPIO_PinMode_INPUT=0,
+ GPIO_PinMode_OUTPUT,
+ GPIO_PinMode_ALTERNATE_FUNCTION,
+ GPIO_PinMode_ANALOG
+};
+
+enum GPIO_PinOutputSpeed_t
+{
+ GPIO_PinOutputSpeed_LOW=0,
+ GPIO_PinOutputSpeed_MEDIUM,
+ GPIO_PinOutputSpeed_FAST,
+ GPIO_PinOutputSpeed_HIGH
+};
+
+enum GPIO_PinOutputType_t
+{
+ GPIO_PinOutputType_PUSH_PULL=0,
+ GPIO_PinOutputType_OPEN_DRAIN
+};
+
+enum GPIO_PinPullUpDown_t
+{
+ GPIO_PinPullUpDown_NOPULL=0,
+ GPIO_PinPullUpDown_PULLUP,
+ GPIO_PinPullUpDown_PULLDOWN
+};
+
+enum GPIO_PinAltFunc_t
+{
+ GPIO_PinAltFunc_AF0=0,
+ GPIO_PinAltFunc_AF1,
+ GPIO_PinAltFunc_AF2,
+ GPIO_PinAltFunc_AF3,
+ GPIO_PinAltFunc_AF4,
+ GPIO_PinAltFunc_AF5,
+ GPIO_PinAltFunc_AF6,
+ GPIO_PinAltFunc_AF7,
+ GPIO_PinAltFunc_AF8,
+ GPIO_PinAltFunc_AF9,
+ GPIO_PinAltFunc_AF10,
+ GPIO_PinAltFunc_AF11,
+ GPIO_PinAltFunc_AF12,
+ GPIO_PinAltFunc_AF13,
+ GPIO_PinAltFunc_AF14,
+ GPIO_PinAltFunc_AF15
+};
+
+class GPIO_PinConfigs
+{
+ public:
+  GPIO_PinConfigs();
+  GPIO_ErrorType_t GPIO_PinConfigsIsOk();
+  GPIO_ErrorType_t pinConfigsErr;
+  GPIO_ErrorType_t pinInitErr;
+  GPIO_PortName_t portName;
+  GPIO_PinNumber_t pinNumber;
+  GPIO_PinState_t pinState =GPIO_PIN_STATE_LOW;
+  GPIO_PinMode_t pinMode =GPIO_PinMode_OUTPUT;
+  GPIO_PinOutputSpeed_t pinOutputSpeed=GPIO_PinOutputSpeed_LOW;
+  GPIO_PinOutputType_t pinOutputType =GPIO_PinOutputType_PUSH_PULL;
+  GPIO_PinPullUpDown_t pinPullUpDown =GPIO_PinPullUpDown_NOPULL;
+  GPIO_PinAltFunc_t pinAltFunc;
+ private:
+
+};
+class gpio
+{
+ private:
+
+ public:
+  GPIO_ErrorType_t gpioErr;
+  GPIO_TypeDef* GPIO_PortReg;
+  gpio(GPIO_PortName_t PortName);
+  GPIO_ErrorType_t GPIO_PinInit (GPIO_PinConfigs* pinConfigs);
+  GPIO_PinState_t GPIO_PinStateGet (GPIO_PinConfigs* pinConfigs);
+  GPIO_ErrorType_t GPIO_PinStateSet (GPIO_PinConfigs* pinConfigs, GPIO_PinState_t pinState);
+  GPIO_ErrorType_t GPIO_PinStateToggle(GPIO_PinConfigs* pinConfigs);
+
+
+};
+# 2 "gpio.cpp" 2
+# 1 "rcc.h" 1
+
+
+
+
+
+enum RCC_ErrorType_t
+{
+ RCC_OK,
+ RCC_NOK,
+ RCC_DEFAULT_ERR=0xFF
+};
+enum RCC_GpioPortName_t
+{
+ RCC_GPIO_PORT_A,
+ RCC_GPIO_PORT_B,
+ RCC_GPIO_PORT_C,
+ RCC_GPIO_PORT_D,
+ RCC_GPIO_PORT_E,
+ RCC_GPIO_PORT_H
+};
+class RCC_Configs
+
+{
+ public:
+
+ private:
+
+};
+class rcc
+{
+ private:
+
+ public:
+        RCC_ErrorType_t rccErr;
+  rcc();
+  RCC_ErrorType_t RCC_gpioPortInit(RCC_GpioPortName_t gpioPortName);
+
+};
+# 3 "gpio.cpp" 2
+rcc GPIO_rcc_object;
+GPIO_TypeDef* GPIO_RegArr[GPIO_PORT_MAX] = {((GPIO_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x0000UL)),((GPIO_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x0400UL)),((GPIO_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x0800UL)),((GPIO_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x0C00UL)),((GPIO_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x1000UL)),((GPIO_TypeDef *) ((0x40000000UL + 0x00020000UL) + 0x1C00UL))};
+
+
+
+
+
+GPIO_PinConfigs::GPIO_PinConfigs()
+{
+ pinConfigsErr = GPIO_NOK;
+ pinInitErr = GPIO_NOK;
+}
+
+
+
+
+GPIO_ErrorType_t GPIO_PinConfigs::GPIO_PinConfigsIsOk()
+{
+ GPIO_ErrorType_t errReturn = GPIO_NOK;
+
+ if((pinNumber<GPIO_PIN_MAX ) && (portName<GPIO_PORT_MAX))
+ {
+  pinConfigsErr = GPIO_OK;
+  errReturn = GPIO_OK;
+ }
+ else
+ {
+  pinConfigsErr = GPIO_NOK;
+  errReturn = GPIO_NOK;
+ }
+
+ return errReturn;
+}
+
+
+
+gpio::gpio(GPIO_PortName_t PortName)
+{
+ gpioErr = GPIO_OK;
+ if(GPIO_rcc_object.rccErr == RCC_OK)
+ {
+  switch(PortName)
+  {
+   case GPIO_PORT_A:
+   case GPIO_PORT_B:
+   case GPIO_PORT_C:
+   case GPIO_PORT_D:
+   case GPIO_PORT_E:
+   case GPIO_PORT_H:
+    GPIO_rcc_object.RCC_gpioPortInit((RCC_GpioPortName_t) PortName);
+    GPIO_PortReg = GPIO_RegArr[PortName];
+    GPIO_rcc_object.rccErr = RCC_OK;
+   break;
+   case GPIO_PORT_MAX:
+   default:
+    GPIO_rcc_object.rccErr = RCC_NOK;
+    gpioErr = GPIO_NOK;
+    break;
+  }
+ }
+ else
+ {
+
+ }
+
+
+}
+
+
+
+
+
+
+GPIO_ErrorType_t gpio::GPIO_PinInit(GPIO_PinConfigs* pinConfigs)
+{
+ GPIO_ErrorType_t errReturn = GPIO_DEFAULT_ERR;
+
+ if((pinConfigs != (GPIO_PinConfigs*)
+# 80 "gpio.cpp" 3 4
+                                    __null
+# 80 "gpio.cpp"
+                                        ) && (gpioErr == GPIO_OK) && (pinConfigs->GPIO_PinConfigsIsOk() == GPIO_OK))
+ {
+
+  GPIO_PortReg->MODER &=~ (uint32_t) ( (0b11 << ((pinConfigs->pinNumber)*2)) );
+  GPIO_PortReg->MODER |= (uint32_t) ( (pinConfigs->pinMode << ((pinConfigs->pinNumber)*2)) );
+
+
+  GPIO_PortReg->PUPDR &=~ (uint32_t) ( (0b11 << ((pinConfigs->pinNumber)*2)) );
+  GPIO_PortReg->PUPDR |= (uint32_t) ( (pinConfigs->pinPullUpDown << ((pinConfigs->pinNumber)*2)) );
+
+
+  if(pinConfigs->pinMode == GPIO_PinMode_OUTPUT)
+  {
+
+   GPIO_PortReg->OTYPER &= ~(0b1 << (pinConfigs->pinNumber)*1 );
+   GPIO_PortReg->OTYPER |= ((pinConfigs->pinPullUpDown) << (pinConfigs->pinNumber)*1);
+
+
+   GPIO_PortReg->OSPEEDR &= ~(0b11 << pinConfigs->pinNumber );
+   GPIO_PortReg->OSPEEDR |= ((pinConfigs->pinOutputSpeed) << (pinConfigs->pinNumber)*2);
+   if (pinConfigs->pinState == GPIO_PIN_STATE_LOW)
+   {
+    GPIO_PortReg->ODR &= (uint32_t)(~(1<<pinConfigs->pinNumber));
+   }
+   else if(pinConfigs->pinState == GPIO_PIN_STATE_HIGH)
+   {
+    GPIO_PortReg->ODR |= (uint32_t)(1<<pinConfigs->pinNumber);
+   }
+   else
+   {
+
+   }
+   pinConfigs->pinInitErr=GPIO_OK;
+  }
+  else if(pinConfigs->pinMode == GPIO_PinMode_ALTERNATE_FUNCTION)
+  {
+   uint8_t Local_u8RegNum = (pinConfigs->pinNumber)/8;
+   uint8_t Local_u8pinNumber = (pinConfigs->pinNumber)%8;
+
+   GPIO_PortReg->OTYPER &= ~(0b1 << (pinConfigs->pinNumber)*1 );
+   GPIO_PortReg->OTYPER |= ((pinConfigs->pinPullUpDown) << (pinConfigs->pinNumber)*1);
+
+
+   GPIO_PortReg->OSPEEDR &= ~(0b11 << pinConfigs->pinNumber );
+   GPIO_PortReg->OSPEEDR |= ((pinConfigs->pinOutputSpeed) << (pinConfigs->pinNumber)*2);
+
+
+
+   GPIO_PortReg->AFR[Local_u8RegNum] &= ~(0b1111 << Local_u8pinNumber *4);
+   GPIO_PortReg->AFR[Local_u8RegNum] |= ((pinConfigs->pinAltFunc) << (Local_u8pinNumber * 4));
+
+   pinConfigs->pinInitErr=GPIO_OK;
+  }
+  else
+  {
+   pinConfigs->pinInitErr=GPIO_NOK;
+  }
+ }
+ else
+ {
+  errReturn = GPIO_DEFAULT_ERR;
+  pinConfigs->pinInitErr = GPIO_NOK;
+ }
+ return errReturn;
+}
+
+
+
+
+
+
+GPIO_PinState_t gpio::GPIO_PinStateGet(GPIO_PinConfigs* pinConfigs)
+{
+ GPIO_PinState_t pinState = GPIO_PIN_STATE_DEFAULT;
+ if((pinConfigs != (GPIO_PinConfigs*)
+# 154 "gpio.cpp" 3 4
+                                    __null
+# 154 "gpio.cpp"
+                                        ) && (pinConfigs->pinInitErr == GPIO_OK))
+ {
+  pinState = (GPIO_PinState_t) ((GPIO_PortReg->IDR >> pinConfigs->pinNumber) & 1);
+ }
+ else
+ {
+  pinState = GPIO_PIN_STATE_DEFAULT;
+ }
+
+ return pinState;
+
+}
+GPIO_ErrorType_t gpio::GPIO_PinStateSet(GPIO_PinConfigs* pinConfigs, GPIO_PinState_t pinState)
+{
+ GPIO_ErrorType_t errReturn = GPIO_DEFAULT_ERR;
+ if((pinConfigs != (GPIO_PinConfigs*)
+# 169 "gpio.cpp" 3 4
+                                    __null
+# 169 "gpio.cpp"
+                                        ) && (pinConfigs->pinInitErr == GPIO_OK))
+ {
+  if (pinState == GPIO_PIN_STATE_LOW)
+  {
+   GPIO_PortReg->ODR &= (uint32_t)(~(1<<pinConfigs->pinNumber));
+  }
+  else if(pinState == GPIO_PIN_STATE_HIGH)
+  {
+   GPIO_PortReg->ODR |= (uint32_t)(1<<pinConfigs->pinNumber);
+  }
+ }
+ else
+ {
+  errReturn = GPIO_DEFAULT_ERR;
+ }
+ return errReturn;
+
+}
+GPIO_ErrorType_t gpio::GPIO_PinStateToggle(GPIO_PinConfigs* pinConfigs)
+{
+ GPIO_ErrorType_t errReturn = GPIO_DEFAULT_ERR;
+ if((pinConfigs != (GPIO_PinConfigs*)
+# 190 "gpio.cpp" 3 4
+                                    __null
+# 190 "gpio.cpp"
+                                        ) && (pinConfigs->pinInitErr == GPIO_OK))
+ {
+  GPIO_PortReg->ODR ^= (uint32_t)(1<<pinConfigs->pinNumber);
+ }
+ else
+ {
+  errReturn = GPIO_DEFAULT_ERR;
+ }
+ return errReturn;
+
+}

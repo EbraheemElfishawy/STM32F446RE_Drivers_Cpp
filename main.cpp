@@ -68,14 +68,14 @@ int main()
 #endif
 
 #if 1
-#include "uart.h"
-#include "led.h"
+//#include "uart.h"
+//#include "led.h"
 #include "gpio.h"
 
 int main()
 {
 	
-	USART2_Init();
+	//USART2_Init();
 	
 	GPIO_PinConfigs gpio_ObjBuiltInLedConfigs;
 	gpio_ObjBuiltInLedConfigs.pinNumber=GPIO_PIN_5;
@@ -92,7 +92,7 @@ int main()
 	{
 		
 	}
-	
+	return 0;
 }
 
 
