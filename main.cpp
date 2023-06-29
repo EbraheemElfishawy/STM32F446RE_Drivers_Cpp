@@ -1,8 +1,9 @@
 #if 1
    /*CLASS1*/
    #include "uart.h"
-   #include "Led.h"
+   #include "led.h"
    /*There are 3 types of allocation*/
+	 
    Led LedRed(RED,ON);                      /*1- Static allocation*/
 	 Led LedBuiltIn(BUILTIN,ON);                      /*1- Static allocation*/
    LedState_Type LedRedState;
@@ -11,8 +12,8 @@
    int main()
    {
 	
-   	USART2_Init();
-   	Led LedGreen(GREEN,OFF);              /*2- Automatic allocation*/
+			USART2_Init();
+			Led LedGreen(GREEN,OFF);              /*2- Automatic allocation*/
        Led *LedBlue = new Led(BLUE,OFF);     /*3- Dynamic allocation, new is like malloc in c*/
 	
        LedRedState   = LedRed.getState();
@@ -21,7 +22,7 @@
 
        LedBlue->setState(ON);
        LedBlueState  = LedBlue->getState();
-   	delete LedBlue;                     /*Use keyword delete to free the pointer*/
+			delete LedBlue;                     /*Use keyword delete to free the pointer*/
        LedBlueState  = LedBlue->getState();
     
    	while(1)

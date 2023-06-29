@@ -2,7 +2,7 @@
 #define __LED_H
 #include <stdint.h>
 #include "uart.h"
-#include "stm32f446xx.h"
+#include "stm32f446re.h"
 
 #define LED_PORT				GPIOA 		/*All leds are connected to GPIOA*/
 #define LED_PORT_CLOCK			(1U<<0)		/*To enable clock for GPIOA as GPIOAEN bit = 0 in AHB1ENR*/
@@ -17,18 +17,18 @@
 #define LED_GREEN_MODE_BIT		(1<<(LED_GREEN_PIN*2U))	/*2 : As every pin takes 2 bits in MODER register*/
 #define LED_BLUE_MODE_BIT		(1<<(LED_BLUE_PIN*2U))	/*8 : As every pin takes 2 bits in MODER register*/
 
-typedef enum 
+enum LedColor_Type 
 {
 	RED = 0,
 	GREEN,
 	BLUE,
 	BUILTIN
-}LedColor_Type;
-typedef enum 
+};
+enum LedState_Type
 {
 	OFF = 0,
 	ON
-}LedState_Type;
+};
 
 /*LED's attribute*/
  class Led
