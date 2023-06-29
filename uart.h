@@ -3,7 +3,7 @@
 
 
 #include <stdio.h>
-#include "stm32f446xx.h"
+#include "stm32f446re.h"
 
 void 		 USART2_Init(void);
 uint16_t USART2_Write(uint16_t ch);

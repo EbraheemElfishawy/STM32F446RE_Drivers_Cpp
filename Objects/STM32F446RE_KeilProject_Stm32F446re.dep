@@ -1,26 +1,26 @@
 Dependencies for Project 'STM32F446RE_KeilProject', Target 'Stm32F446re': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
 F (.\led.cpp)(0x649D56E0)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/led.o -MD)
-I (Led.h)(0x649D56E0)
+I (Led.h)(0x649D7C98)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x602A8FDA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x60355C16)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (uart.h)(0x649D52CA)
+I (uart.h)(0x649D7C98)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x602A8FD4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h)(0x61110710)
+I (stm32f446re.h)(0x649D75F8)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x61110710)
-F (.\main.cpp)(0x649D5C3C)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/main_1.o -MD)
-I (uart.h)(0x649D52CA)
+F (.\main.cpp)(0x649D9C20)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/main_1.o -MD)
+I (uart.h)(0x649D7C98)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x602A8FD4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x60355C16)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h)(0x61110710)
+I (stm32f446re.h)(0x649D75F8)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x602A8FDA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
@@ -29,18 +29,19 @@ I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cms
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x61110710)
-I (Led.h)(0x649D56E0)
-F (.\led.h)(0x649D56E0)()
+I (led.h)(0x649D7C98)
+I (gpio.h)(0x649D99F8)
+F (.\led.h)(0x649D7C98)()
 F (.\powerLed.cpp)(0x649D56E0)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/powerled.o -MD)
 I (PowerLed.h)(0x649D5741)
-I (Led.h)(0x649D56E0)
+I (Led.h)(0x649D7C98)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x602A8FDA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x60355C16)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
-I (uart.h)(0x649D52CA)
+I (uart.h)(0x649D7C98)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x602A8FD4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h)(0x61110710)
+I (stm32f446re.h)(0x649D75F8)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
@@ -49,11 +50,11 @@ I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x61110710)
 F (.\powerLed.h)(0x649D5741)()
 F (.\uart.cpp)(0x649D594E)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/uart_1.o -MD)
-I (uart.h)(0x649D52CA)
+I (uart.h)(0x649D7C98)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x602A8FD4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x60355C16)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
-I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h)(0x61110710)
+I (stm32f446re.h)(0x649D75F8)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x602A8FDA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
@@ -62,7 +63,39 @@ I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cms
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x61110710)
-F (.\uart.h)(0x649D52CA)()
+F (.\uart.h)(0x649D7C98)()
+F (.\gpio.cpp)(0x649D9DFF)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/gpio.o -MD)
+I (gpio.h)(0x649D99F8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x602A8FD4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x60355C16)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
+I (stm32f446re.h)(0x649D75F8)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x602A8FDA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x61110710)
+I (rcc.h)(0x649D7904)
+F (.\gpio.h)(0x649D99F8)()
+F (.\stm32f446re.h)(0x649D75F8)()
+F (.\rcc.h)(0x649D7904)()
+F (.\rcc.cpp)(0x649D7B55)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/rcc.o -MD)
+I (rcc.h)(0x649D7904)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x602A8FD4)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x60355C16)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x60355C34)
+I (stm32f446re.h)(0x649D75F8)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F912E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x602A8FDA)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60355C30)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F912E)
+I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x61110710)
 F (RTE\Device\STM32F446RETx\startup_stm32f446xx.s)(0x61110710)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F446xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f446xx.o)
 F (RTE\Device\STM32F446RETx\system_stm32f4xx.c)(0x61110710)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Stm32F446re-IC:/Users/ebrah/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/ebrah/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F446xx -D_RTE_-o ./objects/system_stm32f4xx.o -MD)
 I (C:\Users\ebrah\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x61110710)

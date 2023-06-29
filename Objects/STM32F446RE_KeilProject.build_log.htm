@@ -29,54 +29,7 @@ Project File Date:  06/29/2023
 Build target 'Stm32F446re'
 Note: source file '.\main.cpp' - object file renamed from '.\Objects\main.o' to '.\Objects\main_1.o'.
 Note: source file '.\uart.cpp' - object file renamed from '.\Objects\uart.o' to '.\Objects\uart_1.o'.
-main.cpp(4): warning: non-portable path to file '"led.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
-   #include "Led.h"
-            ^~~~~~~
-            "led.h"
-main.cpp(6): warning: no previous extern declaration for non-static variable 'LedRed' [-Wmissing-variable-declarations]
-   Led LedRed(RED,ON);                      /*1- Static allocation*/
-       ^
-main.cpp(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-   Led LedRed(RED,ON);                      /*1- Static allocation*/
-   ^
-main.cpp(6): warning: declaration requires a global constructor [-Wglobal-constructors]
-   Led LedRed(RED,ON);                      /*1- Static allocation*/
-       ^~~~~~~~~~~~~~
-main.cpp(7): warning: no previous extern declaration for non-static variable 'LedBuiltIn' [-Wmissing-variable-declarations]
-         Led LedBuiltIn(BUILTIN,ON);                      /*1- Static allocation*/
-             ^
-main.cpp(7): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-         Led LedBuiltIn(BUILTIN,ON);                      /*1- Static allocation*/
-         ^
-main.cpp(7): warning: declaration requires a global constructor [-Wglobal-constructors]
-         Led LedBuiltIn(BUILTIN,ON);                      /*1- Static allocation*/
-             ^~~~~~~~~~~~~~~~~~~~~~
-main.cpp(8): warning: no previous extern declaration for non-static variable 'LedRedState' [-Wmissing-variable-declarations]
-   LedState_Type LedRedState;
-                 ^
-main.cpp(8): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-   LedState_Type LedRedState;
-   ^
-main.cpp(9): warning: no previous extern declaration for non-static variable 'LedGreenState' [-Wmissing-variable-declarations]
-   LedState_Type LedGreenState;
-                 ^
-main.cpp(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-   LedState_Type LedGreenState;
-   ^
-main.cpp(10): warning: no previous extern declaration for non-static variable 'LedBlueState' [-Wmissing-variable-declarations]
-   LedState_Type LedBlueState;
-                 ^
-main.cpp(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-   LedState_Type LedBlueState;
-   ^
-main.cpp(63): warning: C++98 requires newline at end of file [-Wc++98-compat-pedantic]
-#endif
-      ^
-9 warnings generated.
-compiling main.cpp...
-linking...
-Program Size: Code=1564 RO-data=472 RW-data=0 ZI-data=1648  
-".\Objects\STM32F446RE_KeilProject.axf" - 0 Error(s), 9 Warning(s).
+".\Objects\STM32F446RE_KeilProject.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -102,12 +55,12 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Keil::Device:Startup:2.6.3
-      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Source file:   MDK\Device\Source\ARM\STM32F446xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f446xx.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
